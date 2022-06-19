@@ -3,7 +3,7 @@ body {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 p {
@@ -63,7 +63,7 @@ img {
 }
 
 .btn:hover {
-    transition: box-shadow 0.5s ease-in-out, background-image 0.5s ease-in-out;
+  transition: box-shadow 0.5s ease-in-out, background-image 0.5s ease-in-out;
 }
 
 .max-score {
@@ -71,36 +71,36 @@ img {
 }
 
 #reset {
-    background-image: linear-gradient(30deg, red 0%, pink 100%);
-    border-radius: 0 0 5px;
+  background-image: linear-gradient(30deg, red 0%, pink 100%);
+  border-radius: 0 0 5px;
 }
 
 #player-1 {
-    background-image: linear-gradient(30deg, #0bb68b 0%, #50deb16d 100%); 
-    border-radius: 0 0 0 5px;
+  background-image: linear-gradient(30deg, #0bb68b 0%, #50deb16d 100%);
+  border-radius: 0 0 0 5px;
 }
 
 #player-2 {
-  background-image: linear-gradient(30deg, #0061ff 0%, #60efff 100%); 
+  background-image: linear-gradient(30deg, #0061ff 0%, #60efff 100%);
 }
 
 #player-1:hover {
-    background-image: linear-gradient(30deg, #50deb16d 0%, #0bb68b 100%);
-    box-shadow: 0 0 3px 3px #00800043;
+  background-image: linear-gradient(30deg, #50deb16d 0%, #0bb68b 100%);
+  box-shadow: 0 0 3px 3px #00800043;
 }
 
 #player-2:hover {
-    background-image: linear-gradient(30deg, #60efff 0%, #0061ff 100%); 
-    box-shadow: 0 0 3px 3px #0061ff43;
+  background-image: linear-gradient(30deg, #60efff 0%, #0061ff 100%);
+  box-shadow: 0 0 3px 3px #0061ff43;
 }
 
 #reset:hover {
-    background-image: linear-gradient(30deg, pink 0%, red 100%);
-    box-shadow: 0 0 3px 3px #ff000043;
+  background-image: linear-gradient(30deg, pink 0%, red 100%);
+  box-shadow: 0 0 3px 3px #ff000043;
 }
 
 #winning-score-select {
-    border-radius: 10px;
-    padding: 3px;
-    margin-left: 20px;
+  border-radius: 10px;
+  padding: 3px;
+  margin-left: 20px;
 }
