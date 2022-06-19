@@ -5,27 +5,29 @@ let playerOneScore = document.querySelector("#player1-score");
 let playerTwoScore = document.querySelector("#player2-score");
 let currentScoreOne = parseInt(playerOneScore.innerText);
 let currentScoreTwo = parseInt(playerTwoScore.innerText);
-let MaxScore = document.querySelector("#winning-score-select");
+let maxScore = document.querySelector("#winning-score-select");
+
 
 playerOneButton.addEventListener('click', function () {
-    if (parseInt(MaxScore.value) === 0) {
+    if (parseInt(maxScore.value) === 0) {
         alert("Please select the winning score before playing");
     }
-    else if (currentScoreOne < MaxScore.value && currentScoreTwo < MaxScore.value) {
+    else if ((currentScoreOne < maxScore.value && currentScoreTwo < maxScore.value) || ((Math.abs(currentScoreOne - currentScoreTwo < 2) && (Math.abs(currentScoreTwo - currentScoreOne < 2))))) {
         currentScoreOne += 1;
         playerOneScore.innerText = currentScoreOne;
     }
 })
 
 playerTwoButton.addEventListener('click', function () {
-    if (parseInt(MaxScore.value) === 0) {
+    if (parseInt(maxScore.value) === 0) {
         alert("Please select the winning score before playing");
     }
-    else if (currentScoreTwo < MaxScore.value && currentScoreOne < MaxScore.value) {
+    else if ((currentScoreTwo < maxScore.value && currentScoreOne < maxScore.value) || ((Math.abs(currentScoreTwo - currentScoreOne < 2)) && (Math.abs(currentScoreOne - currentScoreTwo < 2)))) {
         currentScoreTwo += 1;
         playerTwoScore.innerText = currentScoreTwo;
     }
 })
+
 
 resetButton.addEventListener('click', function () {
     playerOneScore.innerText = "0";
