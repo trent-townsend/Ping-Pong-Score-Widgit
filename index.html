@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,600&display=swap" rel="stylesheet">
+    <title>Ping Pong Score Keeper</title>
+</head>
+<body>
+    <main class="container">
+        <div >
+            <picture id="bannerimg">
+                <source srcset="img/pingpong.webp">
+                <source srcset="img/pingpong.jpg">
+                <img alt="Two brown table tennis rackets on a table">
+            </picture>
+        </div>
+        <h1>Ping Pong Score Keeper</h1>
+        <div class="score-container">
+            <h2 id="score">0 to 0</h2>
+            <p>Use the buttons below to keep score.</p>
+            <label class="max-score" for="winning-score">Playing To:</label>
+            <select class="max-score" id="winning-score-select" name="winning-score">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+            </select>
+        </div>
+        <div class="button-container">
+            <button class="btn" id="player-1" type="button">+1 Player One</button>
+            <button class="btn" id="player-2" type="button">+1 Player Two</button>
+            <button class="btn" id="reset" type="button">Reset</button>
+        </div>
+
+        
+    </main>
+    <script type="text/javascript" src="app.js"></script>
+</body>
+</html>

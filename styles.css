@@ -1,0 +1,106 @@
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-family: 'Montserrat', sans-serif;
+}
+
+p {
+  margin: 10px 0 40px 0;
+}
+
+h1 {
+  font-size: 20px;
+  font-weight: 600;
+  padding: 0 0 15px 15px;
+  border-bottom: 3px solid #80808039;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 4px 4px 0 0;
+}
+
+.container {
+  height: auto;
+  max-width: 40%;
+  border: 3px solid #80808039;
+  border-radius: 6px;
+  flex: auto;
+}
+
+.score-container {
+  padding-left: 15px;
+  margin-top: 20px;
+}
+
+#score {
+  font-size: 3.2em;
+  padding: 0;
+  margin: 0;
+}
+
+.max-score {
+  margin: 0 0 40px 0;
+}
+
+.button-container {
+  display: flex;
+  flex-wrap: nowrap;
+  max-width: 100%;
+}
+
+.btn {
+  padding: 25px 50px;
+  margin: 0;
+  font-size: 1.6em;
+  border: 0;
+  color: #ffffff;
+  flex: auto;
+  transition: box-shadow 1s ease-in-out, background-image 1s ease-in-out;
+}
+
+.btn:hover {
+    transition: box-shadow 0.5s ease-in-out, background-image 0.5s ease-in-out;
+}
+
+.max-score {
+  font-size: 1.4em;
+}
+
+#reset {
+    background-image: linear-gradient(30deg, red 0%, pink 100%);
+    border-radius: 0 0 5px;
+}
+
+#player-1 {
+    background-image: linear-gradient(30deg, #0bb68b 0%, #50deb16d 100%); 
+    border-radius: 0 0 0 5px;
+}
+
+#player-2 {
+  background-image: linear-gradient(30deg, #0061ff 0%, #60efff 100%); 
+}
+
+#player-1:hover {
+    background-image: linear-gradient(30deg, #50deb16d 0%, #0bb68b 100%);
+    box-shadow: 0 0 3px 3px #00800043;
+}
+
+#player-2:hover {
+    background-image: linear-gradient(30deg, #60efff 0%, #0061ff 100%); 
+    box-shadow: 0 0 3px 3px #0061ff43;
+}
+
+#reset:hover {
+    background-image: linear-gradient(30deg, pink 0%, red 100%);
+    box-shadow: 0 0 3px 3px #ff000043;
+}
+
+#winning-score-select {
+    border-radius: 10px;
+    padding: 3px;
+    margin-left: 20px;
+}
