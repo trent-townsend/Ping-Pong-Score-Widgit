@@ -22,7 +22,7 @@ function checkDeuce(currentScoreOne, currentScoreTwo, maxScore) {
 }
 
 function checkWin(currentScoreOne, currentScoreTwo, maxScore) {
-    if (currentScoreOne >= maxScore.value && isDeuce == false) {
+    if (currentScoreOne >= maxScore.value && isDeuce == false && Math.abs(currentScoreOne - currentScoreTwo) >= 2) {
         playerOneScore.style.color = "green";
         playerTwoScore.style.color = "red";
     }
