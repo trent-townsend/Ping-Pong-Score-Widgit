@@ -23,6 +23,12 @@ img {
   border-radius: 4px 4px 0 0;
 }
 
+#deuce {
+  font-size: 30px; 
+  margin-left: 20px;
+  visibility: hidden; 
+}
+
 .container {
   height: auto;
   max-width: 40%;
