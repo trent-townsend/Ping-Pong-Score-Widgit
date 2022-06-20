@@ -26,7 +26,7 @@ function checkWin(currentScoreOne, currentScoreTwo, maxScore) {
         playerOneScore.style.color = "green";
         playerTwoScore.style.color = "red";
     }
-    else if (currentScoreTwo >= maxScore.value && isDeuce == false) {
+    else if (currentScoreTwo >= maxScore.value && isDeuce == false && Math.abs(currentScoreOne - currentScoreTwo) >= 2) {
         playerOneScore.style.color = "red";
         playerTwoScore.style.color = "green";
     }
