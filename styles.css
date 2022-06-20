@@ -1,3 +1,4 @@
+
 body {
   display: flex;
   align-items: center;
@@ -31,10 +32,10 @@ img {
 
 .container {
   height: auto;
-  max-width: 40%;
+  max-width: 50%;
   border: 3px solid #80808039;
   border-radius: 6px;
-  flex: auto;
+  flex: 1 1 auto;
 }
 
 .score-container {
@@ -54,7 +55,7 @@ img {
 
 .button-container {
   display: flex;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   max-width: 100%;
 }
 
@@ -64,7 +65,7 @@ img {
   font-size: 1.6em;
   border: 0;
   color: #ffffff;
-  flex: auto;
+  flex: 1 1 0;
   transition: box-shadow 1s ease-in-out, background-image 1s ease-in-out;
 }
 
@@ -109,4 +110,16 @@ img {
   border-radius: 10px;
   padding: 3px;
   margin-left: 20px;
+}
+
+@media (max-width: 1000px) {
+  .container {
+    max-width: 80%;
+  }
+}
+@media (max-width: 1200px) {
+  .container {
+    max-width: 70%;
+  }
+  
 }
